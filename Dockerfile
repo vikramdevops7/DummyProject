@@ -1,6 +1,8 @@
 FROM java:8 
 
 # Install maven
+ENV http_proxy 'http://pitc-zscaler-americas-cincinnati3pr.proxy.corporate.ge.com:80'
+ENV https_proxy 'http://pitc-zscaler-americas-cincinnati3pr.proxy.corporate.ge.com:80'
 RUN apt-get update
 RUN apt-get install -y maven
 
