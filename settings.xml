@@ -5,15 +5,15 @@
   <proxies>
     <proxy>
       <id>optional</id>
-      <active>false</active>
+      <active>true</active>
       <protocol>http</protocol>
       <host>pitc-zscaler-americas-cincinnati3pr.proxy.corporate.ge.com</host>
       <port>80</port>
     </proxy>
     <proxy>
       <id>optional-https</id>
-      <active>false</active>
-      <protocol>https</protocol>
+      <active>true</active>
+      <protocol>http</protocol>
       <host>pitc-zscaler-americas-cincinnati3pr.proxy.corporate.ge.com</host>
       <port>80</port>
     </proxy>
