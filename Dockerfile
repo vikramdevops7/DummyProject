@@ -12,6 +12,7 @@ WORKDIR /code
 ADD pom.xml /code/pom.xml
 # RUN ["mvn", "dependency:resolve"]
 # RUN ["mvn", "verify"]
+COPY ./settings.xml $MAVEN_HOME/conf/settings.xml
 RUN mvn -B dependency:resolve dependency:resolve-plugins
 # Adding source, compile and package into a fat jar
 ADD src /code/src
