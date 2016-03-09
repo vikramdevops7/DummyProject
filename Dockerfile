@@ -1,4 +1,4 @@
-FROM maven:3.3.3-jdk-7 
+FROM maven:3.3.3-jdk-8 
 
 # Install maven
 ENV http_proxy 'http://pitc-zscaler-americas-cincinnati3pr.proxy.corporate.ge.com:80'
